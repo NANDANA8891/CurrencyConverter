@@ -37,13 +37,16 @@ cd currency-converter
 ○ Add your API key to the configuration.
 
 ● Run the application:
+
 2. Access the application: The application should now be running locally at http://localhost:8080.
 
 API Endpoints
+
 1. GET /api/rates
 Fetch exchange rates for the specified base currency.
 
 Query Parameters:
+
 ● base: (optional, default: "USD") Base currency.
 Request Example:
 http
@@ -51,6 +54,7 @@ CopyEdit
 ● GET /api/rates?base=USD
 
 Response Example:
+
 json
 CopyEdit
 {
@@ -76,9 +80,13 @@ Response Example:
 }
 
 Error Handling
+
 ● 400 Bad Requests : Invalid or missing parameters.
+
 ● 404 Not Found: Currency code not recognized.
+
 ● 500 Internal Server Error: External API failure or unexpected error.
+
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  Currency Converter API Documentation
