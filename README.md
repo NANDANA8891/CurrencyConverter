@@ -1,5 +1,5 @@
-Currency Converter API
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                            Currency Converter API
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 This is a Spring Boot application that integrates with a public API to provide real-time currency conversion functionality. It includes endpoints to fetch exchange rates and convert currency amounts.
 
 Technologies Used
@@ -23,13 +23,12 @@ Ensure you have the following installed:
 
 Steps to Run the Application Locally
 ● Clone the repository:
-git clone https://github.com/yourusername/currency-converter.git
+git clone https://github.com/NANDANA8891/CurrencyConverter
 ● Navigate to the project directory:
 cd currency-converter
 
 1. Configure the API key:
-○ Sign up for an API key from the external API provider (e.g., Exchange Rates
-API).
+○ Sign up for an API key from the external API provider (e.g., Exchange Rates API).
 ○ Add your API key to the configuration.
 
 ● Run the application:
@@ -70,7 +69,57 @@ Response Example:
 "amount": 100,
 "convertedAmount": 94.5
 }
+
 Error Handling
 ● 400 Bad Requests : Invalid or missing parameters.
 ● 404 Not Found: Currency code not recognized.
 ● 500 Internal Server Error: External API failure or unexpected error.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                                      Currency Converter API Documentation
+                                                                                    ----------------------------------------
+1. GET /api/rates
+●	Fetches the exchange rates for the given base currency. If the base currency is not provided, it defaults to USD.
+Query Parameters:
+●	 Base (optional, default: "USD"): The base currency to get exchange rates for.
+Request Example:
+●	GET /api/rates?base=USD
+
+Response Example:
+{
+    "FJD": 2.3047511886560885,
+    "MXN": 20.26575697017241,
+    "CLF": 0.03578947569339067,
+    "BRL": 5.926100998070283
+}
+
+2. POST /api/convert
+Description: Converts a specified amount from one currency to another using the fetched exchange rates.
+Request Example:
+●	GET /api/convert
+Request Body:
+{
+  "from": "USD",
+  "to": "INR",
+  "amount": 3
+}
+
+
+
+Response Example:
+{
+    "from": "USD",
+    "to": "INR",
+    "amount": 3.0,
+    "convertedAmount": 258.76651457759414
+}
+
+
+Response Status Codes:
+●	200 OK : Successfully fetched exchange rates.
+●	400 Bad Requests : Invalid or missing base currency.
+●	500 Internal Server Error : API failure (e.g., external service unavailable).
+
+
+
