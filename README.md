@@ -16,12 +16,14 @@ Features
 Installation
 
 Prerequisites
+
 Ensure you have the following installed:
 ● Java 21 or higher
 ● Maven
 ● Git (for cloning the repository)
 
 Steps to Run the Application Locally
+
 ● Clone the repository:
 git clone https://github.com/NANDANA8891/CurrencyConverter
 ● Navigate to the project directory:
