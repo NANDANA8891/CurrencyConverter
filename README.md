@@ -1,4 +1,4 @@
-                                                                                            Currency Converter API
+Currency Converter API
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 This is a Spring Boot application that integrates with a public API to provide real-time currency conversion functionality. It includes endpoints to fetch exchange rates and convert currency amounts.
 
@@ -76,9 +76,8 @@ Error Handling
 ● 500 Internal Server Error: External API failure or unexpected error.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-                                                                                      Currency Converter API Documentation
-                                                                                    ----------------------------------------
+ Currency Converter API Documentation
+ ----------------------------------------
 1. GET /api/rates
 ●	Fetches the exchange rates for the given base currency. If the base currency is not provided, it defaults to USD.
 Query Parameters:
