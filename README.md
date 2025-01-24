@@ -26,11 +26,14 @@ Steps to Run the Application Locally
 
 ● Clone the repository:
 git clone https://github.com/NANDANA8891/CurrencyConverter
+
 ● Navigate to the project directory:
 cd currency-converter
 
 1. Configure the API key:
+
 ○ Sign up for an API key from the external API provider (e.g., Exchange Rates API).
+
 ○ Add your API key to the configuration.
 
 ● Run the application:
