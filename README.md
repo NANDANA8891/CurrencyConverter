@@ -32,7 +32,7 @@ cd currency-converter
 ○ Add your API key to the configuration.
 
 ● Run the application:
-3. Access the application: The application should now be running locally at http://localhost:8080.
+2. Access the application: The application should now be running locally at http://localhost:8080.
 
 API Endpoints
 1. GET /api/rates
@@ -80,6 +80,7 @@ Error Handling
  ----------------------------------------
 1. GET /api/rates
 ●	Fetches the exchange rates for the given base currency. If the base currency is not provided, it defaults to USD.
+
 Query Parameters:
 ●	 Base (optional, default: "USD"): The base currency to get exchange rates for.
 Request Example:
